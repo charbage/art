@@ -14,6 +14,10 @@
     <link rel="stylesheet" type="text/css" href="assets/win95.css">
       
     <link rel="stylesheet" type="text/css" href="/assets/clippy/clippy.css" media="all">
+    <link rel="stylesheet" type="text/css" href="clippy.css" media="all">
+     <!-- Add the stylesheet to the head -->
+<link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/pi0/clippyjs/master/assets/clippy.css">
+
       
 </head>
 <body class="bg-cloud">
@@ -47,7 +51,7 @@
 <div class="container" id="page-content">
   <div class="row mb-5"> 
       <div class="col-md-6 text-center">
-            <img src="ladybug-Recovered.png" class="img-fluid">
+            <img src="/Users/pissgremlin/Desktop/ladybug-Recovered.png" class="img-fluid">
       </div>
       <div class="col-md-6 my-auto">
             <div class="card">
@@ -59,6 +63,7 @@
                   <li>Hi! My name is Charlotte!</li>
                   <li>I am an artist from Colorado currently living in Chicago,</li>
                   <li>Enjoy my site!</li>
+                    <li><img src="assets/under.gif"></li>
                 </ul>
                 <div class="btn-group btn-block" role="group" aria-label="Basic example">
                   <button type="button" class="btn btn-secondary"><img src="assets/icons/envelope_closed-1.png" class="icon-16"> Email me</button>
@@ -91,7 +96,7 @@
               </div>
               <div class="card-body">
                 <ul class="list-unstyled mt-3 mb-4">
-                    <li> <img src=assets/teletubby.jpg style=Width:400px;height:400px></li>
+                    <li> <img src= assets/teletubby.jpg></li>
                     <li>death is always on the horizon ;)</li>
               </div>
             </div>
@@ -103,6 +108,7 @@
         </div>
   </div>
 </div>
+   
     
 <div class="container">
     <div class="card mb-4">
@@ -158,9 +164,9 @@
       <div class="row" style="margin-right: 0px;">
           <div class="col-8">
               <a href="//alex-b.me" class="btn start-button"><img src="assets/icons/users-1.png" class="icon-16">Author</a>
-              <a href="https://github.com/AlexBSoft/win95.css" class="btn start-button"><img src="assets/icons/directory_folder_options-5.png" class="icon-16"> GitHub</a>
+              <a href="https://www.instagram.com/pissgoblinart/" class="btn start-button"><img src="assets/icons/directory_folder_options-5.png" class="icon-16"> Instagram</a>
           </div>
-          <div class="col-4 time">By Alex B</div>
+          <div class="col-4 time">By Charlotte</div>
       </div>
     
   </footer>
@@ -170,31 +176,29 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
 <script src="assets/clippy/clippy.min.js"></script>    
-    
-    
-    
-  <head>
-    <meta charset="utf-8" />
-</head>
+ 
 
+    
+    
+
+</head>
 <body>
-    <div id="app" style="height: 100vh">
-        <!-- Webamp will attempt to center itself within this div -->
-    </div>
-    <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
-    <script>
-        const Webamp = window.Webamp;
-        new Webamp({
-            initialTracks: [{
-                metaData: {
-                    artist: "bright eyes",
-                    title: "arc of time (time code)"
-                },
-                url: "_Arc of Time (Time Code).mp3",
-                duration: 232
-            }],
-        }).renderWhenReady(document.getElementById('app'));
-    </script>
+<script src="https://unpkg.com/jquery@3.2.1"></script>
+<script src="https://unpkg.com/clippyjs@latest"></script>
+<script src="./demo.js"></script>
 </body>
 
-</html>
+<!-- Add these scripts to  the bottom of the page -->
+<script src="https://unpkg.com/jquery@3.2.1"></script>
+
+<script src="https://unpkg.com/clippyjs@latest"></script>
+
+<script type="text/javascript">
+clippy.load('Clippy', function(agent){
+    // Do anything with the loaded agent
+agent.show();agent.play('Searching');agent.speak("i saw the face of god and it was weeping")
+          
+});
+</script>
+
+
